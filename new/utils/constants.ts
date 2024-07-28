@@ -1,0 +1,1 @@
+export const DEFAULT_FLASHCARDS_COUNT=8
