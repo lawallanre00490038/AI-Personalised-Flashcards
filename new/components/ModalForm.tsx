@@ -36,9 +36,9 @@ export function ModalForm( {open}: ModalFormProps ) {
   const onSubmit = async (data: any) => {
     const result = await submitStudentDetails(state.message, data);
 
-    console.log("The result", result);
-    if (data) {
-      console.log(data);
+    if (result.status === 200) {
+      window.location.reload();
+      router.push('/flashcard')
     }
     
   };

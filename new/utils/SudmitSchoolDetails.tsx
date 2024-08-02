@@ -23,13 +23,19 @@ export const submitStudentDetails = async (prevState: string, formData: any)  =>
         selectedLanguage,
         selectedDetails,
       });
-      console.log(survey);
+      return {
+        message: "Student details submitted successfully",
+        status: 200,
+      };
     } catch (error) {
-      throw new Error("Error submitting student details");
+      return {
+        message: "An error occurred while submitting student details",
+        status: 500,
+      }
     }
 
-  revalidatePath("/", "layout");
+  // revalidatePath("/", "layout");
 
-  redirect("/flashcard");
+  // redirect("/flashcard");
 };
 

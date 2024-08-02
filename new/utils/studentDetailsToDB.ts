@@ -4,7 +4,7 @@ import {db} from '@/utils/db'
 
 export const newSchool = async (schoolResponses:any) => {
     try {
-      const school = await db.school.create({
+      const school = await db.aLXSchool.create({
           data: {
               studentClass: schoolResponses.selectedClass,
               term: schoolResponses.selectedTerm,
@@ -15,7 +15,7 @@ export const newSchool = async (schoolResponses:any) => {
       }); 
         return school;
     } catch (error) {
-        console.error('Error creating school:', error);
+        console.error('Error creating scholl:', error);
         throw error;
     }
     

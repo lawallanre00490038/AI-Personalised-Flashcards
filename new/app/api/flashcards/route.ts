@@ -18,7 +18,7 @@ export async function POST(req: Request) {
 
   const { count } = body;
 
-  const schoolData = await db.school.findFirst({
+  const schoolData = await db.aLXSchool.findFirst({
     orderBy: {
       createdAt: "desc",
     },

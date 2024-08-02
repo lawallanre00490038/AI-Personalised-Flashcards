@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
         
         <div className='relative col-span-1 mt-8 md:mt-0 m-auto p-4'>
-          <Image src='/hero.png' width={400} height={400} objectFit='square' className='w-full' alt='The hero'/>
+          <Image src='/hero.png' width={400} height={400}  className='w-full' alt='The hero'/>
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@ export const translateText = async ({ text}: {text: any}) => {
 
 
 
-  const schoolData = await db.school.findMany({
+  const schoolData = await db.aLXSchool.findMany({
     take: 1, // Only fetch the most recent survey response
     orderBy: {
       createdAt: "desc", // Order the records by date in descending order
