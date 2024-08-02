@@ -7,7 +7,7 @@ import '@/flash.css'
 import axios from 'axios'
 import { DEFAULT_FLASHCARDS_COUNT } from '@/utils/constants';
 
-function App() {
+function Flashcards() {
   const [flashcards, setFlashcards] = useState([]);
   const [loading, setLoading] = useState(false);
   const [count, setCount] = useState(DEFAULT_FLASHCARDS_COUNT)
@@ -19,9 +19,7 @@ function App() {
     try {
       setLoading(true)
       const response = await axios.post('api/flashcards', {count: count});
-      console.log(response.data)
       setFlashcards(response.data);
-      console.log(response.status)
 
       if (response.status !== 200){
         throw new Error(`API request failed with status: ${response.status}`);
@@ -78,4 +76,4 @@ function App() {
   );
 }
 
-export default App;
+export default Flashcards;
