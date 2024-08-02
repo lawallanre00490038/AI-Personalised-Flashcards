@@ -8,7 +8,7 @@ function FlashcardList(flashcards: any) {
     <div>
       {
         flashcards.map((flashcard: any) => {
-          return <Flashcard flashcard={flashcard} />
+          return <Flashcard key={flashcard} flashcard={flashcard} />
         })
       }
     </div>

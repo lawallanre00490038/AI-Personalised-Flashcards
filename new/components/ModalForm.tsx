@@ -53,7 +53,7 @@ export function ModalForm( {open}: ModalFormProps ) {
         <DialogHeader>
           <DialogTitle>Edit profile</DialogTitle>
           <DialogDescription>
-            Make changes to your profile here. Click save when you're done.
+            Make changes to your profile here. Click save when you&apos;re done.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -86,7 +86,7 @@ export function ModalForm( {open}: ModalFormProps ) {
             </select>
           </div>
           <div className="flex flex-col mb-6">
-            <label className="mb-2 text-sm font-medium">Define student's situation:</label>
+            <label className="mb-2 text-sm font-medium">Define student&apos;s situation:</label>
             <textarea className="p-2 border rounded-md" {...register('selectedDetails')} required>
             </textarea>
           </div>
