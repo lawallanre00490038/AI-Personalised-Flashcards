@@ -38,8 +38,6 @@ export function ModalForm( {open}: ModalFormProps ) {
     setState({ message: result.message });
 
     if (result.status === 200) {
-      console.log(result.status);
-      alert('Details submitted successfully');
       window.location.href = '/flashcard';
     }
     
